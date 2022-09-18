@@ -12,3 +12,12 @@ string[] FilterArray(string[] origArray, int qtySimbols)
         }
     return newArray;
 }
+
+void PrintArray(string[] array)
+{
+    if (array.Length == 0)
+        Console.WriteLine($"В имеющемся массиве строки с заданной длинной отсутствуют.");
+    else
+        for (int i = 0; i < array.Length; i++)
+            Console.Write($"{array[i]} ");
+}
