@@ -16,8 +16,12 @@ string[] FilterArray(string[] origArray, int qtySimbols)
 void PrintArray(string[] array)
 {
     if (array.Length == 0)
-        Console.WriteLine($"В имеющемся массиве строки с заданной длинной отсутствуют.");
+        Console.WriteLine($"В имеющемся массиве строки с заданной длиной отсутствуют.");
     else
         for (int i = 0; i < array.Length; i++)
             Console.Write($"{array[i]} ");
 }
+
+string[] origArray = { "hello", "привет", "сон", "23", "дятел", "pc", "felis silvestris", "кот" };
+string[] filteredArray = FilterArray(origArray, 3);
+PrintArray(filteredArray);
